@@ -1,3 +1,4 @@
+![Yamadalyzer logo](./yamadalyzer/svg/YamadalyzerVector.svg)
 
 # Yamadalyzer
 
