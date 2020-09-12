@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="chippyri.yamadalyzer.App">
+   <top>
+	  <HBox>
+      	 <Label text="Filename: " />
+      	 <TextField fx:id="filenameTextField" />
+      	 <Button fx:id="saveButton" text="Save map"/><!-- TODO: put onAction="#function" for all buttons -->
+      	 <Button fx:id="loadButton" text="Load map" />
+      </HBox>
+   </top>
+   <bottom>
+   <HBox >
+      <Button fx:id="solveButton" text="Solve" onAction="#solvePath" />
+      <Button fx:id="clearSolutionButton" text="Clear Solution" onAction="#clearPath" />
+      <Button fx:id="clearMapButton" text="Clear Map" onAction="#clearMap" />
+   </HBox>
+   </bottom>
+   <center>
+   </center>
+</BorderPane>
