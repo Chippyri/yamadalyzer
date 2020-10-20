@@ -4,12 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
-// Turns file data into map data and vice versa
+// A manager that turns file data into map data and vice versa
 public class MapManager {
-	
-	// TODO: A properties file or class with constants so that multiple classes can access this?
-	// Or pass the size as an argument? The start of pieces of data would have to be recalculated...
-	// Plus, loading can get complex. So I'll focus on 5x5 for now.
+
 	final static int GRID_SIZE = 5;
 	
 	final static int CELL_DATA_START = 0;
@@ -30,7 +27,6 @@ public class MapManager {
 			}
 		}
 		
-		// TODO: setVerticalWall and setHorizontalWall could be the same/similar function?
 		// 5*4 vertical walls
 		for (int y = VERTICAL_WALL_DATA_START; y < HORIZONTAL_WALL_DATA_START; y++) {
 			line = loadedData.get(y);

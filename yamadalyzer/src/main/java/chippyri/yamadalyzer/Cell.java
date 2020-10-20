@@ -1,7 +1,5 @@
 package chippyri.yamadalyzer;
 
-import javafx.event.EventHandler;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Shape;
@@ -9,7 +7,6 @@ import javafx.scene.shape.Shape;
 public class Cell implements MapElement {
 	
 	public enum CELL_STATE { WALKABLE, START, END }
-	
 	public CELL_STATE currentState = CELL_STATE.WALKABLE;
 	
 	// Coordinates in map
@@ -21,11 +18,6 @@ public class Cell implements MapElement {
 	
 	// The visual representation of a cell
 	private Rectangle rectangle;
-	
-	public Cell(int pX, int pY){
-		x = pX;
-		y = pY;
-	}
 	
 	public Cell(int pX, int pY, Rectangle pRectangle){
 		x = pX;
